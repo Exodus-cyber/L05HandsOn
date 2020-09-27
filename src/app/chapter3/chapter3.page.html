@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>chapter3</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list *ngFor="let chapter of chapters">
+    <ion-item [routerDirection]="'root'" [routerLink]="['/toc']">
+       {{chapter.title}}
+    </ion-item>
+  </ion-list>
+  <p> Then the father said, "I'm glad you finally made it my child, i need you to know who I was and who you were in me. This way we can be together
+    even thought i'm not there with you, i'll be there in spirit." So everyday they continued their dialogue back and forth from that moment on. 
+    She checked in on the computer every day in order to speak to her father. Now the home button was also turned off just like in chapter 2 
+    But she didn't worry anymore about the end. In fact she hoped for the end because this time she wasn't looking forward to finishiing the book 
+    but instead she was waiting for the day she could finally see her father and go home to be with him forever and ever and ever. Then once all my work 
+    was done one day I got a message saying, "It's time to come home" and the button opened to go home.  
+  </p>
+  <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.oXYL7crplHZRo0tVmMRCGgHaF4%26pid%3DApi&f=1"/><br>
+  <ion-button color="tertiary" expand="default" [routerDirection]="'root'" [routerLink]="['/chapter2']">Back</ion-button>
+  <ion-button color="success" expand="full" [routerDirection]="'root'" [routerLink]="['/toc']">Home</ion-button>
+
+</ion-content>

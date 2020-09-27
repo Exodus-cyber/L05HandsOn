@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      List Of Contents
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let item of items">
+      <ion-icon name="book" slot="start"></ion-icon>
+        {{item.title}}
+        <!-- [name]="item.icon" slot="start" -->
+    </ion-item>
+  </ion-list>
+  
+    <div *ngIf="selectedItem" padding>
+      You navigated here from <b>{{selectedItem.title }}</b>
+    </div>
+    <ion-button color="primary" expand="default" [routerDirection]="'root'" [routerLink]="['/home']">Home</ion-button>
+    <ion-button color="success" expand="full" [routerDirection]="'chapter1'" [routerLink]="['/chapter1']">Go To Chapter 1</ion-button>
+</ion-content>
+
+
+    
+    

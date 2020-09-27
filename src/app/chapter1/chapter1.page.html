@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Chapter1</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list *ngFor="let chapter of chapters">
+    <ion-item [routerDirection]="'root'" [routerLink]="['/chapter2']">
+       {{chapter.title}}
+    </ion-item>
+  </ion-list>
+  <p>The middle is a place that is the worst place to be in in all the world
+    It is a dreadful place where you have to wait and wait and wait. Its a place
+    where you must prepare yet also are trained with painful lessons and a constant 
+    urging to keep pushing forward in hopes and whole soul dependence that one day God 
+    will get you out of this waiting in the middle that is torturous and crushing.
+  </p>
+  <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.8PeQ5guivtBOD9OUNBgQzgHaE8%26pid%3DApi&f=1"/><br>
+  <ion-button color="tertiary" expand="default" [routerDirection]="'root'" [routerLink]="['/toc']">Back</ion-button>
+  <ion-button color="primary" expand="full" [routerDirection]="'root'" [routerLink]="['/chapter2']">Go to Chapter 2</ion-button> 
+
+</ion-content>
